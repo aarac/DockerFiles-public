@@ -1,8 +1,6 @@
 FROM nvidia/cuda:8.0-cudnn5-devel   
 # start with the nvidia container for cuda 8 with cudnn 5
 
-LABEL maintainer "Michael Sobrepera <mjsobrep@live.com>"
-
 RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install wget unzip lsof apt-utils lsb-core -y
 RUN apt-get install libatlas-base-dev -y
